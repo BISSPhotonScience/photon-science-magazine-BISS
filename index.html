@@ -3,120 +3,132 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Photon Science Magazine — BISS Publication</title>
-  <meta name="description" content="Photon Science Magazine — BISS Publication. Student-led science magazine featuring physics and chemistry." />
+  <title>Photon Science Magazine</title>
+  <meta name="description" content="Photon Science Magazine — BISS Publication." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="wrap header">
-    <div class="brand">
-      <img class="logo" src="assets/biss-logo.jpg" alt="BISS / Nord Anglia Education logo" />
-      <div class="brand-text">
-        <p class="kicker">BISS Publication</p>
-        <h1>Photon Science Magazine</h1>
-        <p class="sub">Student-led science magazine • Behind the scenes of physics & chemistry</p>
-      </div>
-    </div>
+  <!-- Top title bar: title only + small school logo spot -->
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <h1 class="site-title">Photon Science Magazine</h1>
 
-    <nav class="nav">
-      <a href="#issues">Issues</a>
-      <a href="#about">About</a>
-      <a href="#submit">Submit</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <!-- 학교 로고 자리: 파일 없으면 이 줄 삭제해도 됩니다 -->
+      <img class="school-logo" src="assets/school-logo.png" alt="School logo" />
+    </div>
   </header>
 
-  <main class="wrap">
-    <section class="hero">
-      <div class="hero-left">
-        <h2>Read the latest issue</h2>
-        <p>
-          Explore our publications as PDFs. New releases and highlights are posted on Instagram.
-        </p>
-        <div class="hero-actions">
-          <a class="btn" href="#issues">View issues</a>
-          <a class="btn ghost" href="#submit">Submit an article</a>
-        </div>
-      </div>
+  <main>
+    <!-- Welcome banner (no "Read latest" button) -->
+    <section class="welcome wrap">
+      <div class="welcome-card">
+        <div class="welcome-left">
+          <p class="kicker">BISS Publication</p>
+          <h2 class="welcome-title">Welcome to Photon Science Magazine</h2>
 
-      <div class="hero-right">
-        <div class="stat">
-          <div class="stat-num" id="issueCount">—</div>
-          <div class="stat-label">issues available</div>
+          <!-- 짧은 소개 한 줄 자리(나중에 문장만 바꾸면 됨) -->
+          <p class="welcome-desc">
+            Add your one-line introduction here.
+          </p>
         </div>
-        <div class="stat">
-          <div class="stat-num" id="year">—</div>
-          <div class="stat-label">current year</div>
-        </div>
-      </div>
-    </section>
 
-    <section id="issues" class="section">
-      <div class="section-head">
-        <h3>Issues</h3>
-        <p class="muted">Upload PDFs into <span class="mono">/issues</span> and add a new card below.</p>
-      </div>
-
-      <div class="grid" id="issuesGrid">
-        <!-- Example issue card (duplicate this for new issues) -->
-        <article class="card">
-          <div class="card-body">
-            <h4>Issue 01</h4>
-            <p class="meta">Theme: Launch Issue</p>
-            <div class="actions">
-              <a class="btn small" href="issues/issue-01.pdf" target="_blank" rel="noopener">Read (PDF)</a>
-              <a class="link" href="issues/issue-01.pdf" download>Download</a>
-            </div>
+        <div class="welcome-right">
+          <div class="mini-card">
+            <h3>Contact</h3>
+            <ul class="contact-list">
+              <!-- 아래 링크/텍스트를 실제 정보로 바꾸세요 -->
+              <li>
+                <span class="icon" aria-hidden="true">✉</span>
+                <a href="mailto:psm@example.com">psm@example.com</a>
+              </li>
+              <li>
+                <span class="icon" aria-hidden="true">◎</span>
+                <a href="https://instagram.com/" target="_blank" rel="noopener">instagram handle</a>
+              </li>
+            </ul>
           </div>
-        </article>
-      </div>
 
-      <div class="note">
-        <p class="muted">
-          Tip: To add Issue 02, upload <span class="mono">issues/issue-02.pdf</span>, then copy the card and change the number + link.
-        </p>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <h3>About</h3>
-      <p>
-        Photon Science Magazine is a student-led publication sharing accessible science writing,
-        experiments, and explanations across physics and chemistry.
-      </p>
-    </section>
-
-    <section id="submit" class="section">
-      <h3>Submit</h3>
-      <p class="muted">Add your submission form link below.</p>
-      <div class="callout">
-        <p><strong>Submission form:</strong> <span class="mono">PASTE-GOOGLE-FORM-LINK-HERE</span></p>
+          <div class="mini-card">
+            <h3>About</h3>
+            <!-- About도 한 줄 자리만 -->
+            <p class="mini-text">Add a short line about the magazine here.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <h3>Contact</h3>
-      <div class="callout">
-        <p><strong>Email:</strong> <span class="mono">your-email-here</span></p>
-        <p><strong>Instagram:</strong> <span class="mono">@yourhandle</span></p>
-      </div>
+    <!-- Issues list (latest first), zigzag layout -->
+    <section class="issues wrap" id="issues">
+      <h2 class="section-title">Recent Issues</h2>
+
+      <!-- Issue 1 (latest): cover left, text right -->
+      <article class="issue">
+        <div class="cover">
+          <img src="assets/cover-1.jpg" alt="Issue cover 1" />
+        </div>
+
+        <div class="meta">
+          <p class="date">February 2025</p>
+          <h3 class="issue-title">Behind the Scene</h3>
+          <p class="topic"><span>Topic:</span> Behind the Scene</p>
+          <p class="blurb">
+            Replace this with your short message (2–6 lines). This text is for the homepage only.
+          </p>
+
+          <!-- GitHub에 PDF 올리면 issues/issue-01.pdf 처럼 링크 -->
+          <a class="btn" href="issues/issue-01.pdf" target="_blank" rel="noopener">Read issue</a>
+        </div>
+      </article>
+
+      <!-- Issue 2: text left, cover right (auto by CSS nth-child(even)) -->
+      <article class="issue">
+        <div class="cover">
+          <img src="assets/cover-2.jpg" alt="Issue cover 2" />
+        </div>
+
+        <div class="meta">
+          <p class="date">November 2024</p>
+          <h3 class="issue-title">Physics Meets Biology</h3>
+          <p class="topic"><span>Topic:</span> Physics Meets Biology</p>
+          <p class="blurb">
+            Replace this with your short message (2–6 lines). Keep it concise.
+          </p>
+
+          <a class="btn" href="issues/issue-02.pdf" target="_blank" rel="noopener">Read issue</a>
+        </div>
+      </article>
+
+      <!-- Issue 3 -->
+      <article class="issue">
+        <div class="cover">
+          <img src="assets/cover-3.jpg" alt="Issue cover 3" />
+        </div>
+
+        <div class="meta">
+          <p class="date">June 2024</p>
+          <h3 class="issue-title">Chasing the Dark</h3>
+          <p class="topic"><span>Topic:</span> Chasing the Dark</p>
+          <p class="blurb">
+            Replace this with your short message (2–6 lines).
+          </p>
+
+          <a class="btn" href="issues/issue-03.pdf" target="_blank" rel="noopener">Read issue</a>
+        </div>
+      </article>
     </section>
 
-    <footer class="footer">
-      <p>© <span id="footerYear"></span> Photon Science Magazine — BISS Publication</p>
-    </footer>
+    <!-- Past issues placeholder -->
+    <section class="past wrap" id="past">
+      <h2 class="section-title muted">Past Issues</h2>
+      <p class="muted">Placeholder section — you can expand this later.</p>
+    </section>
   </main>
 
-  <script>
-    const y = new Date().getFullYear();
-    document.getElementById("year").textContent = y;
-    document.getElementById("footerYear").textContent = y;
-
-    // Count issue cards on the page
-    const count = document.querySelectorAll("#issuesGrid .card").length;
-    document.getElementById("issueCount").textContent = count;
-  </script>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p class="muted">© Photon Science Magazine — BISS Publication</p>
+    </div>
+  </footer>
 </body>
 </html>
-
