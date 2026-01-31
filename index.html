@@ -1,136 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Photon Science Magazine</title>
-  <meta name="description" content="Photon Science Magazine — BISS Publication." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photon Science Magazine — BISS Publication</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Top title bar: title only + small school logo spot -->
+
+  <!-- Top Header -->
   <header class="topbar">
     <div class="wrap topbar-inner">
       <h1 class="site-title">Photon Science Magazine</h1>
-
-      <!-- 학교 로고 자리: 파일 없으면 이 줄 삭제해도 됩니다 -->
-      <img class="school-logo" src="assets/school-logo.png" alt="School logo" />
     </div>
   </header>
 
   <main>
-    <!-- Welcome banner (no "Read latest" button) -->
+
+    <!-- Welcome Section (no About text) -->
     <section class="welcome wrap">
-      <div class="welcome-card">
-        <div class="welcome-left">
-          <p class="kicker">BISS Publication</p>
-          <h2 class="welcome-title">Welcome to Photon Science Magazine</h2>
+      <div class="welcome-left">
+        <p class="kicker">BISS Publication</p>
+        <h2>Welcome to Photon Science Magazine</h2>
+      </div>
 
-          <!-- 짧은 소개 한 줄 자리(나중에 문장만 바꾸면 됨) -->
-          <p class="welcome-desc">
-            Add your one-line introduction here.
-          </p>
+      <div class="welcome-right">
+        <div class="mini-card">
+          <h3>Contact</h3>
+
+          <ul class="contact-list">
+            <li>
+              <span class="icon">✉</span>
+              <a href="mailto:jaeha_kim@bisspuxi.com">
+                jaeha_kim@bisspuxi.com
+              </a>
+            </li>
+
+            <li>
+              <span class="icon">✉</span>
+              <a href="mailto:binghao_xiang@bisspuxi.com">
+                binghao_xiang@bisspuxi.com
+              </a>
+            </li>
+
+            <li>
+              <span class="icon">✉</span>
+              <a href="mailto:hyeyoon_min@bisspuxi.com">
+                hyeyoon_min@bisspuxi.com
+              </a>
+            </li>
+
+            <li>
+              <span class="icon" aria-hidden="true">◎</span>
+              <a href="https://instagram.com/" target="_blank" rel="noopener">
+                Instagram
+              </a>
+            </li>
+          </ul>
         </div>
-
-        <div class="welcome-right">
-  <div class="mini-card">
-    <h3>Contact</h3>
-
-    <ul class="contact-list">
-      <li>
-        <span class="icon">✉</span>
-        <a href="mailto:jaeha_kim@bisspuxi.com">
-          jaeha_kim@bisspuxi.com
-        </a>
-      </li>
-
-      <li>
-        <span class="icon">✉</span>
-        <a href="mailto:binghao_xiang@bisspuxi.com">
-          binghao_xiang@bisspuxi.com
-        </a>
-      </li>
-
-      <li>
-        <span class="icon">✉</span>
-        <a href="mailto:hyeyoon_min@bisspuxi.com">
-          hyeyoon_min@bisspuxi.com
-        </a>
-      </li>
-
-      <li>
-        <span class="icon" aria-hidden="true">◎</span>
-        <a href="https://instagram.com/YOUR_HANDLE"
-           target="_blank" rel="noopener">
-          Instagram
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-         
-    <!-- Issues list (latest first), zigzag layout -->
-    <section class="issues wrap" id="issues">
-      <h2 class="section-title">Recent Issues</h2>
-
-      <!-- Issue 1 (latest): cover left, text right -->
-      <article class="issue">
-        <div class="cover">
-          <img src="assets/cover-1.jpg" alt="Issue cover 1" />
-        </div>
-
-        <div class="meta">
-          <p class="date">February 2025</p>
-          <h3 class="issue-title">Behind the Scene</h3>
-          <p class="blurb">
-            Replace this with your short message (2–6 lines). This text is for the homepage only.
-          </p>
-
-          <!-- GitHub에 PDF 올리면 issues/issue-01.pdf 처럼 링크 -->
-          <a class="btn" href="issues/issue-01.pdf" target="_blank" rel="noopener">Read This Article</a>
-        </div>
-      </article>
-
-      <!-- Issue 2: text left, cover right (auto by CSS nth-child(even)) -->
-      <article class="issue">
-        <div class="cover">
-          <img src="assets/cover-2.jpg" alt="Issue cover 2" />
-        </div>
-
-        <div class="meta">
-          <p class="date">November 2024</p>
-          <h3 class="issue-title">First Production</h3>
-          <p class="blurb">
-            Replace this with your short message (2–6 lines). Keep it concise.
-          </p>
-
-          <a class="btn" href="issues/issue-02.pdf" target="_blank" rel="noopener">Read This Article</a>
-        </div>
-      </article>
-
-      <!-- Issue 3 -->
-      <article class="issue">
-        <div class="cover">
-          <img src="assets/cover-3.jpg" alt="Issue cover 3" />
-        </div>
-
-        <div class="meta">
-          <p class="date">June 2024</p>
-          <h3 class="issue-title">Chasing the Dark</h3>
-          <p class="blurb">
-            Replace this with your short message (2–6 lines).
-          </p>
-
-          <a class="btn" href="issues/issue-03.pdf" target="_blank" rel="noopener">Read issue</a>
-        </div>
-      </article>
+      </div>
     </section>
 
+    <!-- Issues Section -->
+    <section class="issues wrap">
+
+      <!-- Issue 01 -->
+      <article class="issue">
+        <div class="cover">
+          <img src="assets/cover-1.jpg" alt="Issue cover">
+        </div>
+
+        <div class="meta">
+          <p class="date">2025 · Feb</p>
+          <h3 class="issue-title">Behind the Scene</h3>
+          <p class="blurb">
+            In this issue, we explore what happens behind the scenes of everyday science,
+            from laboratory techniques to hidden physics in daily life.
+          </p>
+
+          <a class="btn" href="issues/issue-01.pdf" target="_blank" rel="noopener">
+            Read issue
+          </a>
+        </div>
+      </article>
+
+      <!-- Issue 02 -->
+      <article class="issue reverse">
+        <div class="cover">
+          <img src="assets/cover-2.jpg" alt="Issue cover">
+        </div>
+
+        <div class="meta">
+          <p class="date">2024 · Oct</p>
+          <h3 class="issue-title">Scientific Curiosity</h3>
+          <p class="blurb">
+            A collection of student writing driven by curiosity,
+            questions, and exploration across science disciplines.
+          </p>
+
+          <a class="btn" href="issues/issue-02.pdf" target="_blank" rel="noopener">
+            Read issue
+          </a>
+        </div>
+      </article>
+
+      <!-- Issue 03 -->
+      <article class="issue">
+        <div class="cover">
+          <img src="assets/cover-3.jpg" alt="Issue cover">
+        </div>
+
+        <div class="meta">
+          <p class="date">2024 · May</p>
+          <h3 class="issue-title">Foundations</h3>
+          <p class="blurb">
+            Our earliest issue, laying the foundation for Photon Science Magazine
+            and student-led scientific communication.
+          </p>
+
+          <a class="btn" href="issues/issue-03.pdf" target="_blank" rel="noopener">
+            Read issue
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
   <footer class="footer">
-    <div class="wrap footer-inner">
-      <p class="muted">© Photon Science Magazine — BISS Publication</p>
-    </div>
+    <p>© Photon Science Magazine — BISS Publication</p>
   </footer>
+
 </body>
 </html>
